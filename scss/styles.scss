@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #0D4F8B;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -378,7 +378,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: white;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -414,7 +414,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid white;
         text-align:center;
     }
 
@@ -538,7 +538,6 @@ footer {
 .vtimeline-point {
     position: relative;
     display: block;
-    vertical-align: top;
     margin-bottom: 30px;
 }
 
@@ -648,6 +647,11 @@ footer {
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+    display: flex;
+
+    a {
+        color: $base-color;
+    }
 }
 
 .project-image {
